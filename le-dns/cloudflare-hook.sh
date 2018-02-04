@@ -3,7 +3,7 @@
 deploy_challenge() {
     local DOMAIN="${1}" TOKEN_FILENAME="${2}" TOKEN_VALUE="${3}"
     echo "$DOMAIN" "$TOKEN_FILENAME" "$TOKEN_VALUE"
-    ./dnspod.sh "$CONFIG" "$DOMAIN" "$TOKEN_VALUE"
+    ./cloudflare.sh "$CONFIG" "$DOMAIN" "$TOKEN_VALUE"
     sleep 5
 }
 
